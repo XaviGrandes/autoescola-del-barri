@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Autoescola Del Barri · Barcelona</title>
+  <meta name="description" content="Autoescola Del Barri: aprende a conducir con profesores pacientes y cercanos en Barcelona. 4,0 ★ en Google con 111 reseñas.">
+  <link rel="icon" href="img/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="header" id="top">
+  <div class="container header__inner">
+    <a href="#top" class="brand">
+      <img src="img/logo.webp" alt="" width="56" height="40">
+      <span>Autoescola<br><strong>Del Barri</strong></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#precios" data-i18n="nav.prices">Precios</a>
+      <a href="#profesores" data-i18n="nav.team">Profesores</a>
+      <a href="#como-funciona" data-i18n="nav.how">Cómo funciona</a>
+      <a href="#por-que" data-i18n="nav.why">Por qué nosotros</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Idioma">
+      <button type="button" data-lang="es">ES</button>
+      <button type="button" data-lang="ca">CA</button>
+    </div>
+    <button class="burger" id="burger" aria-label="Menú" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <a class="rating reveal" href="https://maps.app.goo.gl/?q=Autoescola+Del+Barri" data-maps target="_blank" rel="noopener">
+          <span class="stars">★★★★☆</span>
+          <strong><span data-count="4" data-decimals="1">4,0</span>/5</strong>
+          · <span data-count="111">111</span> <span data-i18n="hero.reviews">reseñas en Google</span>
+        </a>
+        <h1 class="reveal" style="--delay:.1s" data-i18n="hero.title">Aprende a conducir con confianza</h1>
+        <p class="lead reveal" style="--delay:.2s" data-i18n="hero.lead">Profesores cercanos, clases seguras y la tranquilidad de una autoescuela de barrio de toda la vida.</p>
+
+        <form class="book reveal" style="--delay:.3s" id="book">
+          <h2 data-i18n="book.title">Reserva tu primera clase</h2>
+          <div class="book__fields">
+            <label><span data-i18n="book.name">Nombre</span>
+              <input name="name" required autocomplete="name" data-i18n-ph="book.namePh" placeholder="Tu nombre"></label>
+            <label><span data-i18n="book.phone">Teléfono</span>
+              <input name="phone" type="tel" required autocomplete="tel" placeholder="600 000 000"></label>
+            <label><span data-i18n="book.permit">Permiso</span>
+              <select name="permit">
+                <option value="B" data-i18n="book.optB">Coche (B)</option>
+                <option value="A2" data-i18n="book.optA">Moto (A2)</option>
+                <option value="AM" data-i18n="book.optAM">Ciclomotor (AM)</option>
+              </select></label>
+          </div>
+          <button class="btn btn--dark" type="submit" data-i18n="book.cta">Reservar ahora</button>
+        </form>
+      </div>
+      <div class="hero__art reveal reveal--zoom" style="--delay:.2s">
+        <div class="hero__blob"></div>
+        <img src="img/logo.webp" alt="Logo Autoescola Del Barri" class="hero__car" width="620" height="440">
+      </div>
+    </div>
+    <div class="road" aria-hidden="true"></div>
+  </section>
+
+  <!-- PRECIOS (inventados) -->
+  <section class="section section--soft" id="precios">
+    <div class="container">
+      <header class="section__head reveal">
+        <h2 data-i18n="prices.title">Packs y precios</h2>
+        <p data-i18n="prices.sub">Elige el pack que mejor encaja contigo</p>
+      </header>
+      <div class="cards cards--3">
+        <article class="card price reveal" style="--delay:0s">
+          <div class="icon">🚗</div>
+          <h3 data-i18n="prices.p1">Permiso B Básico</h3>
+          <p class="price__amount">399&nbsp;€</p>
+          <ul>
+            <li data-i18n="prices.p1a">Matrícula y teórico online</li>
+            <li data-i18n="prices.p1b">10 clases prácticas</li>
+            <li data-i18n="prices.p1c">Acompañamiento al examen</li>
+          </ul>
+          <a href="#contacto" class="btn btn--dark" data-i18n="prices.cta">Ver detalles</a>
+        </article>
+        <article class="card price price--featured reveal" style="--delay:.12s">
+          <span class="tag" data-i18n="prices.popular">Más popular</span>
+          <div class="icon">⚡</div>
+          <h3 data-i18n="prices.p2">Pack Intensivo</h3>
+          <p class="price__amount">699&nbsp;€</p>
+          <ul>
+            <li data-i18n="prices.p2a">20 clases prácticas</li>
+            <li data-i18n="prices.p2b">Teórico presencial y online</li>
+            <li data-i18n="prices.p2c">Carné en tiempo récord</li>
+          </ul>
+          <a href="#contacto" class="btn btn--dark" data-i18n="prices.cta">Ver detalles</a>
+        </article>
+        <article class="card price reveal" style="--delay:.24s">
+          <div class="icon">🔁</div>
+          <h3 data-i18n="prices.p3">Clases sueltas</h3>
+          <p class="price__amount">35&nbsp;€<small data-i18n="prices.perClass">/clase</small></p>
+          <ul>
+            <li data-i18n="prices.p3a">Reciclaje y confianza</li>
+            <li data-i18n="prices.p3b">Coche manual o automático</li>
+            <li data-i18n="prices.p3c">Horario a tu medida</li>
+          </ul>
+          <a href="#contacto" class="btn btn--dark" data-i18n="prices.cta">Ver detalles</a>
+        </article>
+      </div>
+      <p class="note reveal" data-i18n="prices.note">Precios orientativos. Pregúntanos por packs de moto y ciclomotor.</p>
+    </div>
+  </section>
+
+  <!-- PROFESORES (inventados) -->
+  <section class="section" id="profesores">
+    <div class="container">
+      <header class="section__head reveal">
+        <h2 data-i18n="team.title">Nuestro equipo</h2>
+        <p data-i18n="team.sub">Profesores titulados, pacientes y del barrio</p>
+      </header>
+      <div class="cards cards--4">
+        <article class="card person reveal" style="--delay:0s"><div class="avatar">JM</div><h3>Jordi Martí</h3><p class="role" data-i18n="team.m">Profesor titulado</p><p class="muted"><span data-i18n="team.years">años de experiencia</span>: 15</p></article>
+        <article class="card person reveal" style="--delay:.1s"><div class="avatar">MG</div><h3>Marta García</h3><p class="role" data-i18n="team.f">Profesora titulada</p><p class="muted"><span data-i18n="team.years">años de experiencia</span>: 9</p></article>
+        <article class="card person reveal" style="--delay:.2s"><div class="avatar">AR</div><h3>Àlex Roca</h3><p class="role" data-i18n="team.m">Profesor titulado</p><p class="muted"><span data-i18n="team.years">años de experiencia</span>: 7</p></article>
+        <article class="card person reveal" style="--delay:.3s"><div class="avatar">LS</div><h3>Laia Serra</h3><p class="role" data-i18n="team.f">Profesora titulada</p><p class="muted"><span data-i18n="team.years">años de experiencia</span>: 6</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="section section--dark" id="como-funciona">
+    <div class="container">
+      <header class="section__head reveal">
+        <h2 data-i18n="how.title">Cómo funciona</h2>
+        <p data-i18n="how.sub">De la matrícula al carné en 4 pasos</p>
+      </header>
+      <ol class="steps">
+        <li class="reveal" style="--delay:0s"><span class="num">1</span><h3 data-i18n="how.s1">Matrícula</h3><p data-i18n="how.s1d">Ven a vernos o reserva online.</p></li>
+        <li class="reveal" style="--delay:.12s"><span class="num">2</span><h3 data-i18n="how.s2">Teórico</h3><p data-i18n="how.s2d">Clases y tests hasta aprobar.</p></li>
+        <li class="reveal" style="--delay:.24s"><span class="num">3</span><h3 data-i18n="how.s3">Prácticas</h3><p data-i18n="how.s3d">Al volante con tu profesor.</p></li>
+        <li class="reveal" style="--delay:.36s"><span class="num">4</span><h3 data-i18n="how.s4">Examen DGT</h3><p data-i18n="how.s4d">Te acompañamos el gran día.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- POR QUÉ -->
+  <section class="section section--soft" id="por-que">
+    <div class="container">
+      <header class="section__head reveal">
+        <h2 data-i18n="why.title">Por qué aprender con nosotros</h2>
+      </header>
+      <div class="cards cards--4 why">
+        <div class="reveal reveal--left" style="--delay:0s"><div class="icon">🛡️</div><h3 data-i18n="why.w1">Flota moderna</h3><p data-i18n="why.w1d">Coches revisados y seguros para aprender tranquilo.</p></div>
+        <div class="reveal reveal--left" style="--delay:.1s"><div class="icon">😊</div><h3 data-i18n="why.w2">Profesores pacientes</h3><p data-i18n="why.w2d">Calma, cercanía y atención a tu ritmo.</p></div>
+        <div class="reveal reveal--left" style="--delay:.2s"><div class="icon">📅</div><h3 data-i18n="why.w3">Horarios flexibles</h3><p data-i18n="why.w3d">Clases que se adaptan a tu día a día.</p></div>
+        <div class="reveal reveal--left" style="--delay:.3s"><div class="icon">🏘️</div><h3 data-i18n="why.w4">De barrio</h3><p data-i18n="why.w4d">Te conocemos por tu nombre, no por un número.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPINIONES (ejemplo) -->
+  <section class="section" id="opiniones">
+    <div class="container">
+      <header class="section__head reveal">
+        <h2 data-i18n="rev.title">Lo que dicen nuestros alumnos</h2>
+        <p><strong>4,0 ★</strong> · 111 <span data-i18n="hero.reviews">reseñas en Google</span></p>
+      </header>
+      <div class="cards cards--3">
+        <blockquote class="card quote reveal" style="--delay:0s"><p class="stars">★★★★★</p><p data-i18n="rev.r1">«Aprobé a la primera. Muy buen trato y mucha paciencia.»</p><cite>— Paula R.</cite></blockquote>
+        <blockquote class="card quote reveal" style="--delay:.12s"><p class="stars">★★★★★</p><p data-i18n="rev.r2">«Cercanos y flexibles con los horarios. Lo recomiendo.»</p><cite>— Marc T.</cite></blockquote>
+        <blockquote class="card quote reveal" style="--delay:.24s"><p class="stars">★★★★☆</p><p data-i18n="rev.r3">«Me quitaron el miedo a conducir. Gracias al equipo.»</p><cite>— Nuria B.</cite></blockquote>
+      </div>
+      <p class="center reveal"><a class="btn btn--yellow" data-maps target="_blank" rel="noopener" href="#" data-i18n="rev.cta">Ver todas en Google</a></p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section section--soft" id="contacto">
+    <div class="container contact">
+      <div class="reveal reveal--left">
+        <h2 data-i18n="contact.title">Ven a conocernos</h2>
+        
+        <p>📍 Carrer de Conca, 44, Loc 3<br>08041 Barcelona (Sant Martí)</p>
+        <p>📞 <a href="tel:+34637944768">637 944 768</a></p>
+        <p>🕘 <span data-i18n="contact.hours1">Lunes a jueves: 10:00–13:00 y 16:00–19:00</span><br><span data-i18n="contact.hours2">Viernes: 10:00–13:00 · Sábado y domingo: cerrado</span></p>
+        <p class="contact__btns">
+          <a class="btn btn--dark" href="tel:+34637944768" data-i18n="contact.call">Llamar</a>
+          <a class="btn btn--yellow" href="https://wa.me/34637944768" target="_blank" rel="noopener">WhatsApp</a>
+        </p>
+      </div>
+      <div class="map reveal reveal--right">
+        <iframe title="Mapa Autoescola Del Barri" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Autoescola%20Del%20Barri%4041.4143763,2.1792652&z=17&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#top" class="brand"><img src="img/logo.webp" alt="" width="56" height="40"><span>Autoescola<br><strong>Del Barri</strong></span></a>
+    <nav>
+      <a href="#precios" data-i18n="nav.prices">Precios</a>
+      <a href="#profesores" data-i18n="nav.team">Profesores</a>
+      <a href="#como-funciona" data-i18n="nav.how">Cómo funciona</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+    </nav>
+  </div>
+  <p class="footer__copy">© 2026 Autoescola Del Barri · <span data-i18n="footer.rights">Todos los derechos reservados</span></p>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
